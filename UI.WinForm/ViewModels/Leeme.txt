@@ -1,0 +1,16 @@
+﻿RECOMENDACIÓN 
+Si notas que los campos(atributos-propiedades) de los modelos de dominio (userModel,etc) llegan a limitarse
+para mostrar los datos directamente en la interfaz gráfica,
+crea las clases de los objetos comerciales(entidad) en esta carpeta con los campos(atributos del objeto)
+necesarios para mostrar en la interfaz gráfica.
+EJEMPLO:
+public class UserModelView
+{
+    public int id { get; set; }
+    public string userName { get; set; }
+    public string lastName { get; set; }
+    public string position { get; set; }
+    public string email { get; set; }
+//Puedes realizar aqui las validaciones de datos en caso que envíes este objeto a la capa de dominio.
+}
+Ver: https://youtu.be/SGXR0pDCP38?t=2878
